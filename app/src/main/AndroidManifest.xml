@@ -13,35 +13,35 @@
         android:theme="@style/Theme.KitaBisa"
         tools:targetApi="31">
         <activity
-            android:name=".RegisterActivity"
+            android:name=".view.RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".view.LoginActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LandingRecruiter"
+            android:name=".view.LandingRecruiter"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LandingWorker"
+            android:name=".view.LandingWorker"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LandingPage"
+            android:name=".view.LandingPage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

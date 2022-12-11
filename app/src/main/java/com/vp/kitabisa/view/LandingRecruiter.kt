@@ -1,7 +1,8 @@
-package com.vp.kitabisa
+package com.vp.kitabisa.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.vp.kitabisa.R
 
 class LandingRecruiter : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

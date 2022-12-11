@@ -1,11 +1,12 @@
-package com.vp.kitabisa
+package com.vp.kitabisa.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.vp.kitabisa.R
 
-class RegisterActivity : AppCompatActivity() {
+class LandingWorker : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_landing_worker)
     }
 }

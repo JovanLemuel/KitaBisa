@@ -1,11 +1,12 @@
-package com.vp.kitabisa
+package com.vp.kitabisa.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.vp.kitabisa.R
 
-class LandingPage : AppCompatActivity() {
+class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_landing_page)
+        setContentView(R.layout.activity_register)
     }
 }
