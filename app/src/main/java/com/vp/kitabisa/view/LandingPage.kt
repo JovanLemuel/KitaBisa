@@ -1,5 +1,6 @@
 package com.vp.kitabisa.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -15,6 +16,11 @@ class LandingPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLandingPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.landingButtonRecruiter.setOnClickListener {
+            val myIntent = Intent(this, RecruiterLoginActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 
     override fun onBackPressed() {

@@ -23,7 +23,7 @@
         android:layout_height="500dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="-110dp"
-        android:backgroundTint="@color/unused2"
+        android:backgroundTint="@color/theme_navy"
         app:cardBackgroundColor="@color/theme_gray"
         app:cardCornerRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="70dp"
                     android:layout_marginVertical="30dp"
-                    android:backgroundTint="@color/unused2"
+                    android:backgroundTint="@color/theme_navy"
                     android:text="Username"
                     android:textStyle="bold" />
 

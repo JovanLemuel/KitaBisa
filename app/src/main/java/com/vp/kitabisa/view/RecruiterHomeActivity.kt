@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.vp.kitabisa.R
-import com.vp.kitabisa.RecruiterHome
-import com.vp.kitabisa.RecruiterProfile
-import com.vp.kitabisa.RecruiterSettings
+import com.vp.kitabisa.view.RecruiterHome
+import com.vp.kitabisa.view.RecruiterProfile
+import com.vp.kitabisa.view.RecruiterSettings
 import com.vp.kitabisa.databinding.ActivityRecruiterHomeBinding
 
 class RecruiterHomeActivity : AppCompatActivity() {
