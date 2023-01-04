@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#CDD8FF"
     android:textAlignment="center"
-    tools:context=".view.LoginActivity">
+    tools:context=".view.RecruiterLoginActivity">
 
     <ImageView
         android:id="@+id/imageView"

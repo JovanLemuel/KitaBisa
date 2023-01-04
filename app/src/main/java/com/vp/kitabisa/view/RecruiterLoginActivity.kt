@@ -4,15 +4,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.vp.kitabisa.R
 import com.vp.kitabisa.databinding.ActivityLandingPageBinding
-import com.vp.kitabisa.databinding.ActivityLandingRecruiterBinding
+import com.vp.kitabisa.databinding.ActivityLoginRecruiterBinding
+import com.vp.kitabisa.databinding.ActivityRecruiterHomeBinding
 
-class LandingRecruiter : AppCompatActivity() {
+class RecruiterLoginActivity : AppCompatActivity() {
 
-    private lateinit var binding : ActivityLandingRecruiterBinding
+    private lateinit var binding : ActivityLoginRecruiterBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLandingRecruiterBinding.inflate(layoutInflater)
+        binding = ActivityLoginRecruiterBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
 }
