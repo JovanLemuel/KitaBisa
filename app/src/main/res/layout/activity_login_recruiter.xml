@@ -155,13 +155,14 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/recruiter_register_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="250dp"
                     android:layout_marginTop="310dp"
                     android:layout_marginRight="50dp"
                     android:text="Click Here!"
+                    android:clickable="true"
                     android:textColor="#5A92FF"
                     android:textStyle="bold" />
 

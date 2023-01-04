@@ -1,5 +1,6 @@
 package com.vp.kitabisa.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.vp.kitabisa.R
@@ -15,5 +16,10 @@ class RecruiterLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginRecruiterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.recruiterRegisterTv.setOnClickListener {
+            val myIntent = Intent(this, RecruiterRegisterActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
