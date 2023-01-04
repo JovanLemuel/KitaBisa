@@ -20,5 +20,10 @@ class RecruiterRegisterActivity : AppCompatActivity() {
             val myIntent = Intent(this, RecruiterLoginActivity::class.java)
             startActivity(myIntent)
         }
+
+        binding.imageView.setOnClickListener {
+            val myIntent = Intent(this, RecruiterHomeActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }

@@ -9,6 +9,7 @@
     tools:context=".view.RecruiterRegisterActivity">
 
     <ImageView
+        android:clickable="true"
         android:id="@+id/imageView"
         android:layout_width="283dp"
         android:layout_height="216dp"
@@ -23,7 +24,7 @@
         android:layout_height="500dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="-110dp"
-        android:backgroundTint="@color/theme_navy"
+        android:backgroundTint="@color/theme_gray"
         app:cardBackgroundColor="@color/theme_gray"
         app:cardCornerRadius="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,7 +51,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginBottom="70dp"
                 app:cardBackgroundColor="@color/theme_gray_two"
                 app:cardCornerRadius="40dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -161,8 +161,8 @@
                     android:layout_marginLeft="270dp"
                     android:layout_marginTop="310dp"
                     android:layout_marginRight="50dp"
-                    android:text="Log in"
                     android:clickable="true"
+                    android:text="Log in"
                     android:textColor="#5A92FF"
                     android:textStyle="bold" />
 
