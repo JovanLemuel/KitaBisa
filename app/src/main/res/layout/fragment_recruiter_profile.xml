@@ -78,27 +78,6 @@
                         android:text="Username"
                         android:textStyle="bold" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="50dp"
-                        android:layout_marginTop="60dp"
-                        app:cardCornerRadius="8dp">
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="310dp"
-                            android:layout_height="wrap_content"
-                            app:boxStrokeWidth="0dp"
-                            app:boxStrokeWidthFocused="0dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@color/white"
-                                android:hint="Enter Your Username" />
-                        </com.google.android.material.textfield.TextInputLayout>
-                    </androidx.cardview.widget.CardView>
-
                     <ImageView
                         android:id="@+id/imageView5"
                         android:layout_width="wrap_content"
@@ -115,27 +94,6 @@
                         android:layout_marginVertical="140dp"
                         android:text="Password"
                         android:textStyle="bold" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="310dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="50dp"
-                        android:layout_marginVertical="170dp"
-                        app:cardCornerRadius="8dp">
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:boxStrokeWidth="0dp"
-                            app:boxStrokeWidthFocused="0dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="310dp"
-                                android:layout_height="wrap_content"
-                                android:backgroundTint="#FFFFFF"
-                                android:hint="Enter Your Password" />
-                        </com.google.android.material.textfield.TextInputLayout>
-                    </androidx.cardview.widget.CardView>
 
                 </androidx.cardview.widget.CardView>
             </androidx.constraintlayout.widget.ConstraintLayout>
