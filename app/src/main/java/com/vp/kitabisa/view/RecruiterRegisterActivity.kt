@@ -16,12 +16,13 @@ class RecruiterRegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterRecruiterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.recruiterLoginTv.setOnClickListener {
+        binding.recruiterLoginTvbutton.setOnClickListener {
             val myIntent = Intent(this, RecruiterLoginActivity::class.java)
             startActivity(myIntent)
+            finish()
         }
 
-        binding.imageView.setOnClickListener {
+        binding.recruiterRegisterLogo.setOnClickListener {
             val myIntent = Intent(this, RecruiterHomeActivity::class.java)
             startActivity(myIntent)
         }

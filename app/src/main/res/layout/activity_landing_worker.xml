@@ -7,7 +7,7 @@
     tools:context=".view.LandingWorker">
 
     <ImageView
-        android:id="@+id/landing_recruiter_iv"
+        android:id="@+id/landing_worker_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/image_1" />
 
     <TextView
-        android:id="@+id/landing_recruiter_tv"
+        android:id="@+id/landing_worker_tv"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -28,10 +28,10 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/landing_recruiter_iv" />
+        app:layout_constraintTop_toBottomOf="@+id/landing_worker_iv" />
 
     <Button
-        android:id="@+id/landing_recruiter_button"
+        android:id="@+id/landing_worker_button"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_marginTop="60dp"
@@ -40,5 +40,5 @@
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/landing_recruiter_tv" />
+        app:layout_constraintTop_toBottomOf="@+id/landing_worker_tv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,9 +17,10 @@ class RecruiterLoginActivity : AppCompatActivity() {
         binding = ActivityLoginRecruiterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.recruiterRegisterTv.setOnClickListener {
+        binding.recruiterRegisterTvbutton.setOnClickListener {
             val myIntent = Intent(this, RecruiterRegisterActivity::class.java)
             startActivity(myIntent)
+            finish()
         }
     }
 }

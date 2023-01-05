@@ -1,10 +1,11 @@
 package com.vp.kitabisa.view
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.vp.kitabisa.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -30,12 +31,21 @@ class RecruiterSettings : Fragment() {
         }
     }
 
+    private var _binding:RecruiterSettings? = null;
+    private val binding get() = _binding!!;
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_recruiter_settings, container, false)
+        _binding = RecruiterSettings.inflate(inflater,container,false);
+        val view = binding.root;
+        return view;
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     companion object {

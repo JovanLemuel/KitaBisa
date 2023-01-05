@@ -19,7 +19,7 @@ class RecruiterHomeActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(RecruiterHome())
 
-        binding.bottomNavigationView.setOnItemSelectedListener {
+        binding.bottomNavigationViewRecruiter.setOnItemSelectedListener {
 
             when(it.itemId){
 

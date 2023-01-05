@@ -27,8 +27,8 @@ class RecruiterAdapter(private val workersList : ArrayList<Workers>) : RecyclerV
 
     class RecruiterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     {
-        val workerName : TextView = itemView.findViewById(R.id.worker_name)
-        val workerTitle : TextView = itemView.findViewById(R.id.worker_title)
+        val workerName : TextView = itemView.findViewById(R.id.recruiter_worker_name)
+        val workerTitle : TextView = itemView.findViewById(R.id.recruiter_worker_title)
     }
 
 }

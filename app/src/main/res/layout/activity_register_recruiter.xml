@@ -10,7 +10,7 @@
 
     <ImageView
         android:clickable="true"
-        android:id="@+id/imageView"
+        android:id="@+id/recruiter_register_logo"
         android:layout_width="283dp"
         android:layout_height="216dp"
         android:layout_marginTop="40dp"
@@ -30,10 +30,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/recruiter_register_logo">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/recruiter_register_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -59,7 +59,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/recruiter_register_iv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="40dp"
@@ -67,7 +67,7 @@
                     app:srcCompat="@drawable/profile_symbol" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/recruiter_register_tv1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="70dp"
@@ -98,7 +98,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/recruiter_register_iv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="40dp"
@@ -106,7 +106,7 @@
                     app:srcCompat="@drawable/password_symbol" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/recruiter_register_tv2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="70dp"
@@ -136,7 +136,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <Button
-                    android:id="@+id/button_register_recruiter"
+                    android:id="@+id/button_recruiter_register"
                     android:layout_width="330dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_horizontal"
@@ -146,7 +146,7 @@
                     app:cornerRadius="8dp" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/recruiter_register_tv3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="90dp"
@@ -155,7 +155,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/recruiter_login_tv"
+                    android:id="@+id/recruiter_login_tvbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="270dp"
