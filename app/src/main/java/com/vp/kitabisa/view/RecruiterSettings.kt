@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.vp.kitabisa.R
+import dagger.hilt.android.AndroidEntryPoint
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,6 +19,8 @@ private const val ARG_PARAM2 = "param2"
  * Use the [RecruiterSettings.newInstance] factory method to
  * create an instance of this fragment.
  */
+
+@AndroidEntryPoint
 class RecruiterSettings : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -38,9 +41,7 @@ class RecruiterSettings : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = RecruiterSettings.inflate(inflater,container,false);
-        val view = binding.root;
-        return view;
+        return inflater.inflate(R.layout.fragment_recruiter_settings, container, false)
     }
 
     override fun onDestroyView() {

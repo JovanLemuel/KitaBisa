@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.vp.kitabisa.R
 import com.vp.kitabisa.adapter.RecruiterAdapter
 import com.vp.kitabisa.model.Workers
+import dagger.hilt.android.AndroidEntryPoint
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +24,8 @@ private const val ARG_PARAM2 = "param2"
  * Use the [RecruiterHome.newInstance] factory method to
  * create an instance of this fragment.
  */
+
+@AndroidEntryPoint
 class RecruiterHome : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null

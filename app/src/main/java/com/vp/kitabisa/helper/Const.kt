@@ -1,6 +1,5 @@
 package com.vp.kitabisa.helper
 
 object Const {
-    const val BASE_URL = "localhost:6969"
-    const val API_KEY = ""
+    const val BASE_URL_LOCALHOST = "http://192.168.1.10:7070/"
 }
