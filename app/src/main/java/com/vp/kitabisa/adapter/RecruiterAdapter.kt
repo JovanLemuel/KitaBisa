@@ -1,18 +1,15 @@
 package com.vp.kitabisa.adapter
 
-import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.vp.kitabisa.R
 import com.vp.kitabisa.model.Workers
 
 class RecruiterAdapter(private val workersList : ArrayList<Workers>) : RecyclerView.Adapter<RecruiterAdapter.RecruiterViewHolder>() {
 
-    @RequiresApi(Build.VERSION_CODES.N)
+//    @RequiresApi(Build.VERSION_CODES.N)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecruiterViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.recruiter_list_item, parent, false)

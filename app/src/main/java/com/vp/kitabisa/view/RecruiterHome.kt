@@ -1,7 +1,5 @@
 package com.vp.kitabisa.view
 
-import android.icu.lang.UCharacter.GraphemeClusterBreak.L
-import android.os.Build.VERSION_CODES.P
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -76,7 +74,7 @@ class RecruiterHome : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        dataInitialize()
+//        dataInitialize()
         val layoutManager = GridLayoutManager(context, 2)
         recyclerView = view.findViewById(R.id.recruiter_recycler_view)
         recyclerView.layoutManager = layoutManager
@@ -86,7 +84,7 @@ class RecruiterHome : Fragment() {
     }
 
 
-    private fun dataInitialize(){
+    /*private fun dataInitialize(){
         workersArrayList = arrayListOf<Workers>()
 
         name = arrayOf(
@@ -101,5 +99,5 @@ class RecruiterHome : Fragment() {
             val workers = Workers(name[i], title[i])
             workersArrayList.add(workers)
         }
-    }
+    }*/
 }

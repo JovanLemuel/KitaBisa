@@ -13,20 +13,16 @@ import javax.inject.Inject
 
 @HiltViewModel
 class RecruitersViewModel @Inject constructor(private val repository: EndPointRepository) : ViewModel() {
-    //    add user
     fun addRecruiter(recruiter_name:String,recruiter_password:String,recruiter_title:String,recruiter_description:String,recruiter_contact:String)=
         repository.addRecruiter(recruiter_name,recruiter_password,recruiter_title,recruiter_description,recruiter_contact)
 
-    //    login user
     fun loginRecruiter(recruiter_name:String,recruiter_password:String)=repository.loginRecruiter(recruiter_name,recruiter_password)
 
-    //    update user
     fun updateRecruiter(recruiter_id:String,recruiter_name:String,recruiter_password:String,recruiter_title:String,recruiter_description:String,recruiter_contact:String)=
         repository.updateRecruiter(recruiter_id,recruiter_name,recruiter_password,recruiter_title,recruiter_description,recruiter_contact)
 
-    suspend fun getRecruiterById(id:Int)=repository.getRecruiterById(id)
+    suspend fun getRecruiterById(recruiter_id:Int)=repository.getRecruiterById(recruiter_id)
 
-    //get user by id
     val _recruiter : MutableLiveData<Recruiters> by lazy {
         MutableLiveData<Recruiters>()
     }
@@ -34,8 +30,8 @@ class RecruitersViewModel @Inject constructor(private val repository: EndPointRe
     val recruiter : LiveData<Recruiters>
         get() = _recruiter
 
-    fun getRecruiterbyId(id:Int) = viewModelScope.launch {
-        repository.getRecruiterById(id).let { response ->
+    fun getRecruiterbyId(recruiter_id:Int) = viewModelScope.launch {
+        repository.getRecruiterById(recruiter_id).let { response ->
             if (response.isSuccessful){
                 _recruiter.postValue(response.body())
             }else{

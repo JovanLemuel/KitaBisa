@@ -1,7 +1,6 @@
 package com.vp.kitabisa.model
 
-class Workers {
-    var worker_id: Int = 0
+class SubmitRegisterWorker {
     var worker_name: String = ""
     var worker_password: String = ""
     var worker_title: String = ""

@@ -66,7 +66,7 @@ class RecruiterLoginActivity : AppCompatActivity() {
                     ) {
                         if (response.isSuccessful) {
                             val myIntent = Intent(this@RecruiterLoginActivity, RecruiterHomeActivity::class.java)
-                                .putExtra("login_id", response.body()?.recruiter_id)
+                                .putExtra("login_recruiter_id", response.body()?.recruiter_id)
                             loginRecruiter = true
 //                            Toast.makeText(this@LoginActivity, response.body()?.user_id.toString(), Toast.LENGTH_SHORT).show()
                             startActivity(myIntent)

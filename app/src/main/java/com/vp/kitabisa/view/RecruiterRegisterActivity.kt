@@ -11,6 +11,7 @@ import com.vp.kitabisa.R
 import com.vp.kitabisa.databinding.ActivityLoginRecruiterBinding
 import com.vp.kitabisa.databinding.ActivityRegisterRecruiterBinding
 import com.vp.kitabisa.model.SubmitRegisterRecruiter
+import com.vp.kitabisa.view.RecruiterHomeActivity.Companion.login_id
 import com.vp.kitabisa.viewmodel.RecruitersViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
@@ -77,7 +78,7 @@ class RecruiterRegisterActivity : AppCompatActivity() {
                     }
 
                     override fun onFailure(call: Call<SubmitRegisterRecruiter>, t: Throwable) {
-                        Log.d("RegisterActivity", "onFailure: ${t.message}")
+                        Log.d("RecruiterRegisterActivity", "onFailure: ${t.message}")
                     }
                 })
             }

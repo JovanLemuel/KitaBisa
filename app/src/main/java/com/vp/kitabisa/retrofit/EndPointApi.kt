@@ -6,7 +6,6 @@ import retrofit2.Response
 import retrofit2.http.*
 
 interface EndPointApi {
-    //    users api
     @FormUrlEncoded
     @POST("recruiter")
     fun addRecruiter(
@@ -28,13 +27,11 @@ interface EndPointApi {
         @Field("recruiter_contact") recruiter_contact: String
     ): Call<Updaterecruiter>
 
-    //   get user by id
     @GET("recruiter/{id}")
     suspend fun getRecruiterById(
         @Path("recruiter_id") recruiter_id: Int
     ): Response<Recruiters>
 
-    //cek login
     @FormUrlEncoded
     @POST("loginRecruiter")
     fun loginRecruiter(
@@ -42,7 +39,41 @@ interface EndPointApi {
         @Field("recruiter_password") recruiter_password: String
     ): Call<SubmitLoginRecruiter>
 
-    @GET("postRecruiter/{id}")
+    @FormUrlEncoded
+    @POST("worker")
+    fun addWorker(
+        @Field("worker_name") worker_name: String,
+        @Field("worker_password") worker_password: String,
+        @Field("worker_title") worker_title: String,
+        @Field("worker_description") worker_description: String,
+        @Field("worker_contact") worker_contact: String
+    ): Call<SubmitRegisterWorker>
+
+    @FormUrlEncoded
+    @PATCH("worker")
+    fun updateWorker(
+        @Field("worker_id") worker_id: String,
+        @Field("worker_name") worker_name: String,
+        @Field("worker_password") worker_password: String,
+        @Field("worker_title") worker_title: String,
+        @Field("worker_description") worker_description: String,
+        @Field("worker_contact") worker_contact: String
+    ): Call<Updateworker>
+
+    @GET("worker/{id}")
+    suspend fun getWorkerById(
+        @Path("worker_id") worker_id: Int
+    ): Response<Workers>
+
+    //cek login
+    @FormUrlEncoded
+    @POST("loginWorker")
+    fun loginWorker(
+        @Field("worker_name") worker_name: String,
+        @Field("worker_password") worker_password: String
+    ): Call<SubmitLoginWorker>
+
+    /*@GET("postRecruiter/{id}")
     suspend fun getPostRecruiter(
         @Path("post_recruiter_id") post_recruiter_id: Int
     ): Response<PostRecruiter>
@@ -68,5 +99,5 @@ interface EndPointApi {
     @DELETE("postRecruiter")
     fun DeleteRecruiter(
         @Query("post_recruiter_id") post_recruiter_id: String
-    ): Call<DeleteRecruiter>
+    ): Call<DeleteRecruiter>*/
 }
