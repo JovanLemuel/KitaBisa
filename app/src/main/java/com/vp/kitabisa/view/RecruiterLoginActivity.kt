@@ -43,7 +43,6 @@ class RecruiterLoginActivity : AppCompatActivity() {
             val recruiter_name=binding.recruiterLoginNameTextInputEditText.text.toString().trim()
             val recruiter_password=binding.recruiterLoginPasswordTextInputEditText.text.toString().trim()
 
-            //            checker
             if (recruiter_name.isEmpty()) {
                 binding.recruiterLoginNameTextInputLayout.error="Please fill in name"
             } else {
@@ -56,7 +55,6 @@ class RecruiterLoginActivity : AppCompatActivity() {
                 binding.recruiterLoginPasswordTextInputLayout.error=""
             }
 
-//            check data with api
             if (recruiter_name.isNotEmpty() && recruiter_password.isNotEmpty()) {
                 viewModel = ViewModelProvider(this).get(RecruitersViewModel::class.java)
                 viewModel.loginRecruiter(recruiter_name, recruiter_password).enqueue(object : Callback<SubmitLoginRecruiter> {
@@ -68,7 +66,6 @@ class RecruiterLoginActivity : AppCompatActivity() {
                             val myIntent = Intent(this@RecruiterLoginActivity, RecruiterHomeActivity::class.java)
                                 .putExtra("login_recruiter_id", response.body()?.recruiter_id)
                             loginRecruiter = true
-//                            Toast.makeText(this@LoginActivity, response.body()?.user_id.toString(), Toast.LENGTH_SHORT).show()
                             startActivity(myIntent)
                         } else {
                             Toast.makeText(this@RecruiterLoginActivity, "Login failed", Toast.LENGTH_SHORT).show()

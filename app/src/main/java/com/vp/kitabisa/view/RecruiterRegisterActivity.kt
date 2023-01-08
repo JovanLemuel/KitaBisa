@@ -8,10 +8,8 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.vp.kitabisa.R
-import com.vp.kitabisa.databinding.ActivityLoginRecruiterBinding
 import com.vp.kitabisa.databinding.ActivityRegisterRecruiterBinding
 import com.vp.kitabisa.model.SubmitRegisterRecruiter
-import com.vp.kitabisa.view.RecruiterHomeActivity.Companion.login_id
 import com.vp.kitabisa.viewmodel.RecruitersViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
@@ -33,11 +31,6 @@ class RecruiterRegisterActivity : AppCompatActivity() {
             val myIntent = Intent(this, RecruiterLoginActivity::class.java)
             startActivity(myIntent)
             finish()
-        }
-
-        binding.recruiterRegisterLogo.setOnClickListener {
-            val myIntent = Intent(this, RecruiterHomeActivity::class.java)
-            startActivity(myIntent)
         }
 
         registerClick()

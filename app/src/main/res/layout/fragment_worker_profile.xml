@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.RecruiterSettings">
+    tools:context=".view.WorkerSettings">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -35,11 +35,11 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView">
 
             <TextView
-                android:id="@+id/recruiter_name_tv"
+                android:id="@+id/worker_name_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Recruiter Name"
+                android:text="Worker Name"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -61,44 +61,44 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
-                        android:id="@+id/recruiter_profile_name_tv"
+                        android:id="@+id/worker_profile_name_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="135dp"
                         android:layout_marginVertical="30dp"
                         android:backgroundTint="@color/theme_navy"
-                        android:text="Recruiter Name"
+                        android:text="Worker Name"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/recruiter_profile_title_tv"
+                        android:id="@+id/worker_profile_title_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="135dp"
                         android:layout_marginVertical="70dp"
-                        android:text="Recruiter Title"
+                        android:text="Worker Title"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/recruiter_profile_description_tv"
+                        android:id="@+id/worker_profile_description_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="135dp"
                         android:layout_marginVertical="110dp"
-                        android:text="Recruiter Description"
+                        android:text="Worker Description"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/recruiter_profile_type_tv"
+                        android:id="@+id/worker_profile_type_tv"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="135dp"
                         android:layout_marginVertical="150dp"
-                        android:text="Recruiter Type"
+                        android:text="Worker Type"
                         android:textStyle="bold" />
 
                     <Button
-                        android:id="@+id/update_recruiter_data_button"
+                        android:id="@+id/update_worker_data_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="135dp"

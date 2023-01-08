@@ -6,7 +6,7 @@
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/RecruiterRV_cardView"
+        android:id="@+id/WorkerRV_cardView"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_marginStart="20dp"
@@ -25,7 +25,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/idRecruiterRV_textView"
+                android:id="@+id/idWorkerRV_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:visibility="invisible"
@@ -33,7 +33,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/recruiter_name_tv_rv"
+                android:id="@+id/worker_name_tv_rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
@@ -43,34 +43,34 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/recruiter_type_tv_rv"
+                android:id="@+id/worker_type_tv_rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="5dp"
                 android:text="type"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recruiter_name_tv_rv" />
+                app:layout_constraintTop_toBottomOf="@+id/worker_name_tv_rv" />
 
             <TextView
-                android:id="@+id/recruiter_description_tv_rv"
+                android:id="@+id/worker_description_tv_rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="5dp"
                 android:text="title"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recruiter_type_tv_rv" />
+                app:layout_constraintTop_toBottomOf="@+id/worker_type_tv_rv" />
 
             <TextView
-                android:id="@+id/recruiter_contact_tv_rv"
+                android:id="@+id/worker_contact_tv_rv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="5dp"
                 android:text="description"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recruiter_description_tv_rv" />
+                app:layout_constraintTop_toBottomOf="@+id/worker_description_tv_rv" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

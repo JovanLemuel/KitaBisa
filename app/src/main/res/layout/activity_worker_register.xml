@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="#CDD8FF"
     android:textAlignment="center"
-    tools:context=".view.RecruiterRegisterActivity">
+    tools:context=".view.WorkerRegisterActivity">
 
     <ImageView
-        android:id="@+id/recruiter_register_logo"
+        android:id="@+id/worker_register_logo"
         android:layout_width="283dp"
         android:layout_height="216dp"
         android:layout_marginTop="40dp"
@@ -29,10 +29,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recruiter_register_logo">
+        app:layout_constraintTop_toBottomOf="@+id/worker_register_logo">
 
         <TextView
-            android:id="@+id/recruiter_register_tv"
+            android:id="@+id/worker_register_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -58,7 +58,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/recruiter_register_iv1"
+                    android:id="@+id/worker_register_iv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="40dp"
@@ -66,7 +66,7 @@
                     app:srcCompat="@drawable/profile_symbol" />
 
                 <TextView
-                    android:id="@+id/recruiter_register_tv1"
+                    android:id="@+id/worker_register_tv1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="70dp"
@@ -83,14 +83,14 @@
                     app:cardCornerRadius="8dp">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/recruiterRegisterName_TextInputLayout"
+                        android:id="@+id/workerRegisterName_TextInputLayout"
                         android:layout_width="310dp"
                         android:layout_height="wrap_content"
                         app:boxStrokeWidth="0dp"
                         app:boxStrokeWidthFocused="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/recruiterRegisterName_TextInputEditText"
+                            android:id="@+id/workerRegisterName_TextInputEditText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@color/white"
@@ -99,7 +99,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <ImageView
-                    android:id="@+id/recruiter_register_iv2"
+                    android:id="@+id/worker_register_iv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="40dp"
@@ -107,7 +107,7 @@
                     app:srcCompat="@drawable/password_symbol" />
 
                 <TextView
-                    android:id="@+id/recruiter_register_tv2"
+                    android:id="@+id/worker_register_tv2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="70dp"
@@ -123,14 +123,14 @@
                     app:cardCornerRadius="8dp">
 
                     <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/recruiterRegisterPassword_TextInputLayout"
+                        android:id="@+id/workerRegisterPassword_TextInputLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:boxStrokeWidth="0dp"
                         app:boxStrokeWidthFocused="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/recruiterRegisterPassword_TextInputEditText"
+                            android:id="@+id/workerRegisterPassword_TextInputEditText"
                             android:layout_width="310dp"
                             android:layout_height="wrap_content"
                             android:backgroundTint="#FFFFFF"
@@ -139,7 +139,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <Button
-                    android:id="@+id/button_recruiter_register"
+                    android:id="@+id/button_worker_register"
                     android:layout_width="330dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_horizontal"
@@ -149,7 +149,7 @@
                     app:cornerRadius="8dp" />
 
                 <TextView
-                    android:id="@+id/recruiter_register_tv3"
+                    android:id="@+id/worker_register_tv3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="90dp"
@@ -158,7 +158,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/recruiter_login_tvbutton"
+                    android:id="@+id/worker_login_tvbutton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="270dp"

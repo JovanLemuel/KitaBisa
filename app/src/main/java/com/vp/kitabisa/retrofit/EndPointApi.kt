@@ -65,7 +65,6 @@ interface EndPointApi {
         @Path("worker_id") worker_id: Int
     ): Response<Workers>
 
-    //cek login
     @FormUrlEncoded
     @POST("loginWorker")
     fun loginWorker(

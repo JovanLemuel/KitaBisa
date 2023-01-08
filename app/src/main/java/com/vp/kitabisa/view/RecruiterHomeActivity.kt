@@ -16,7 +16,7 @@ class RecruiterHomeActivity : AppCompatActivity() {
     private lateinit var binding : ActivityRecruiterHomeBinding
 
     companion object {
-        var login_id=0
+        var login_recruiter_id=0
         var loginRecruiter = false
     }
 
@@ -24,22 +24,22 @@ class RecruiterHomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRecruiterHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        login_id=intent.getIntExtra("login_id", 0)
-        val sharedPreference = getSharedPreferences("id", MODE_PRIVATE)
+        login_recruiter_id=intent.getIntExtra("login_recruiter_id", 0)
+        val sharedPreference = getSharedPreferences("recruiter_id", MODE_PRIVATE)
         val editor = sharedPreference.edit()
         if (loginRecruiter){
-            if (login_id !=0){
-                editor.putInt("id", login_id)
+            if (login_recruiter_id !=0){
+                editor.putInt("recruiter_id", login_recruiter_id)
                 editor.apply()
             }
         }else{
-            editor.putInt("id", 0)
+            editor.putInt("recruiter_id", 0)
             editor.apply()
-            login_id = sharedPreference.getInt("id", 0)
+            login_recruiter_id = sharedPreference.getInt("recruiter_id", 0)
         }
 
-        if (sharedPreference.getInt("id", 0) != 0){
-            login_id = sharedPreference.getInt("id", 0)
+        if (sharedPreference.getInt("recruiter_id", 0) != 0){
+            login_recruiter_id = sharedPreference.getInt("recruiter_id", 0)
         }
         replaceFragment(RecruiterHome())
 
